@@ -3,6 +3,7 @@ As a developer, we use Git/Github for literally every project we have. For all t
 This process involves multiple manual steps: initializing Git, adding files, committing changes, setting the remote URL, and pushing to GitHub.
 This script automates the hassle for you. It takes two arguments, the local folder path and the Github remote repository.
 It initializes a git repo is needed, does git add, commit, add remote origin and finally push to main branch.
+Command to run : ./script1.sh /path/to/local/folder https://github.com/username/repo.git
 
 
 2. script2.sh : Timestamp backup of any file
