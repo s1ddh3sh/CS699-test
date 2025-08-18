@@ -25,7 +25,7 @@ fi
 
 # Add all files, commit, set remote, and push
 git add .
-git commit -m "Initial commit"
+git commit -m "Automated commit"
 git branch -M main
 git remote add origin "$REMOTE_URL"
 git push -u origin main
