@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Check if both folder and remote URL are provided
 if [ $# -ne 2 ]; then
-  echo "Usage: $0 <local-folder-path> <github-remote-url>"
+  echo "Incorrect number of arguments."
   exit 1
 fi
 
@@ -11,7 +10,7 @@ REMOTE_URL="$2"
 
 # Check if folder exists
 if [ ! -d "$FOLDER_PATH" ]; then
-  echo "❌ Error: Folder '$FOLDER_PATH' does not exist."
+  echo "Error: Folder '$FOLDER_PATH' does not exist."
   exit 1
 fi
 
@@ -30,4 +29,4 @@ git branch -M main
 git remote add origin "$REMOTE_URL"
 git push -u origin main
 
-echo "✅ Folder '$FOLDER_PATH' uploaded to GitHub repo: $REMOTE_URL"
+echo "Folder '$FOLDER_PATH' uploaded to GitHub repo: $REMOTE_URL"
