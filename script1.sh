@@ -32,4 +32,4 @@ if ! git remote get-url origin &>/dev/null; then
 fi
 git push -u origin main
 
-echo "Folder '$FOLDER_PATH' uploaded to GitHub repo: $REMOTE_URL"
+echo "Latest changes uploaded to GitHub repo: $REMOTE_URL"
