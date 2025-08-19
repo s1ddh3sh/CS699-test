@@ -24,12 +24,12 @@ fi
 
 # Add all files, commit, set remote, and push
 git add .
-git commit -m "Automated commit" 2>/dev/null
+git commit -m "Automated commit"
 git branch -M main
 
 if ! git remote get-url origin &>/dev/null; then
   git remote add origin "$REMOTE_URL"
-f1
+fi
 git push -u origin main
 
 echo "Folder '$FOLDER_PATH' uploaded to GitHub repo: $REMOTE_URL"
