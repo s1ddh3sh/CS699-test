@@ -1,6 +1,6 @@
 1. script1.sh : Auto-upload modified Files on a Github repository
-As a developer, we use Git/Github for literally every project we have. For all the changes, we have to follow a fix set of steps to push our files to Github remote repo.
-This process involves multiple manual steps: initializing Git, adding files, committing changes, setting the remote URL, and pushing to GitHub.
+As a developer, we use Git/Github for literally every project we make. For all the changes and version control, we have to follow a fix set of steps to push our local files to Github repository.
+This process involves multiple manual steps: initializing Git(if not already), adding files, committing changes, setting the remote URL, and pushing to GitHub.
 This script automates the hassle for you. It takes two arguments, the local folder path and the Github remote repository.
 Command to run : ./script1.sh /path/to/local/folder https://github.com/username/repo.git
 
